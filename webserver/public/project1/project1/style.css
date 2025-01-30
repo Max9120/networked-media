@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Gopher";
+    src: url("Gopher-Medium.woff2");
+}
+body {
+    font-family: "Gopher", sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+a {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+    background-color: #83268e;
+    color: white;
+    border-radius: 5px;
+}
+
+#rainbow_gif1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    z-index: 1000;
+}
+#rainbow_gif2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    z-index: 1000;
+}
