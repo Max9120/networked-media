@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("dot-grid.webp");
+  margin: 0;
+  user-select: none;
+}
+
+#clock {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.shape {
+  width: 80px;
+  height: 80px;
+  transition: background-color 0.5s ease;
+}
+
+.square {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.circle {
+  border-radius: 50%;
+}
