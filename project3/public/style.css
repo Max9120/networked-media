@@ -1,0 +1,186 @@
+@font-face {
+    font-family: BBgum;
+    src: url('BubblegumSans-Regular.ttf');
+}
+
+h1 {
+    font-family: BBgum;
+    color: white;
+    font-size: 60px;
+}
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+h1 a:visited {
+    color: white;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffbe4;
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+body.advice {
+    background-color: #d0ebff;
+}
+
+body.mourning {
+    background-color: #e9e2fa;
+} 
+
+
+nav.advice {
+    background-color: #89c2ff;
+}
+
+nav.mourning {
+    background-color: #b39ddb;
+}
+
+header {
+    background-color: #ffccd5;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffb3c6;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ff6b81;
+}
+
+nav a:hover {
+    background-color: #ff4f64;
+}
+
+.input[type="submit"] {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4f64;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #ff6b81;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #ff4f64;
+}
+
+.post-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+}
+
+.post-card h2 {
+    margin: 0 0 10px 0;
+}
+
+.post-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff4f64;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+#gif-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* .gif {
+    width: 50%;
+} */

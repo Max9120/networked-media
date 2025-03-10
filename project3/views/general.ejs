@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Haven ₍^. .^₎⟆ | General</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">CAT HAVEN</a></h1>
+        <nav>
+            <a href="/general">GENERAL</a>
+            <a href="/advice">ADVICE</a>
+            <a href="/mourning">MOUNRING & LOSS</a>
+        </nav>
+    </header>
+    <main>
+        <p>All images, videos, and articles of your feline friends about anything!</p>
+        <a href="/newGen" class="button">Create Post</a>
+        <hr>
+        <div class="post-feed">
+            <% genPosts.forEach(post => { %>
+                <div class="post-card">
+                    <h2><%= post.title %></h2>
+                    <p><%= post.text %></p>
+                    <% if (post.imgUrl) { %>
+                        <img src="<%= post.imgUrl %>" alt="Post Image">
+                    <% } %>
+                    <% if (post.url) { %>
+                        <p><a href="<%= post.url %>" target="_blank">Link here</a></p>
+                    <% } %>
+                </div>
+            <% })%> 
+        </div>
+    </main>
+</body>
+</html>

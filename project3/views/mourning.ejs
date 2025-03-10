@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Haven ₍^. .^₎⟆ | Mourning & Loss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mourning">
+    <header>
+        <h1><a href="/">CAT HAVEN</a></h1>
+        <nav class="mourning">
+            <a href="/general">GENERAL</a>
+            <a href="/advice">ADVICE</a>
+            <a href="/mourning">MOUNRING & LOSS</a>
+        </nav>
+    </header>
+    <main>
+        <p>For those grieving the loss of their feline friends.</p>
+        <a href="/newM" class="button">Create Post</a>
+        <hr>
+        <div class="post-feed">
+            <% mPosts.forEach(post => { %>
+                <div class="post-card">
+                    <h2><%= post.title %></h2>
+                    <p><%= post.text %></p>
+                    <% if (post.imgUrl) { %>
+                        <img src="<%= post.imgUrl %>" alt="Post Image">
+                    <% } %>
+                    <% if (post.url) { %>
+                        <p><a href="<%= post.url %>" target="_blank">Link here</a></p>
+                    <% } %>
+                </div>
+            <% })%> 
+        </div>
+    </main>
+</body>
+</html>

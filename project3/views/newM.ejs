@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Mourning & Loss Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mourning">
+    <header>
+        <h1>New Mourning & Loss Post</h1>
+    </header>
+    <main>
+        <form method="POST" action="/mournSubmit" enctype="multipart/form-data">
+            <label>Title:</label>
+            <input type="text" name="title">
+            <label>Text:</label>
+            <textarea name="text"></textarea>
+            <label>Image:</label>
+            <input type="file" name="img">
+            <label>URL (optional):</label>
+            <input type="url" name="url">
+            <input type="submit" name="sbtn" value="submit">
+        </form>
+    </main>
+</body>
+</html>

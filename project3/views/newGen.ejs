@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New General Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>New General Post</h1>
+    </header>
+    <main>
+        <form method="POST" action="/genSubmit" enctype="multipart/form-data">
+            <label>Title:</label>
+            <input type="text" name="title">
+            
+            <label>Text:</label>
+            <textarea name="text"></textarea>
+            
+            <label>URL (optional):</label>
+            <input type="url" name="url">
+
+            <label>Image:</label>
+            <input type="file" name="img">
+            <input type="submit" name="sbtn" value="submit">
+
+        </form>
+    </main>
+</body>
+</html>
